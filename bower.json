@@ -1,0 +1,35 @@
+{
+  "name": "asb-detect",
+  "description": "Detect any Android Stock-Browser",
+  "main": [
+    "src/asb-detect.js"
+  ],
+  "moduleType": [
+    "amd",
+    "node",
+    "es6"
+  ],
+  "authors": [
+    "dvL-den <n.dvLden@gmail.com> (http://dvL-den.net)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:dvLden/asb-detect.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "android",
+    "native-browser",
+    "stock-browser",
+    "browser",
+    "detect"
+  ],
+  "homepage": "https://github.com/dvLden/asb-detect",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
