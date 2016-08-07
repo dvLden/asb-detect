@@ -1,4 +1,4 @@
-const AndroidSBDetect = (function () {
+const asbDetect = (function () {
     /**
      * Detect Android Stock-Browser
      */
@@ -22,4 +22,4 @@ const AndroidSBDetect = (function () {
     }
 })();
 
-export default AndroidSBDetect;
+export default asbDetect;
