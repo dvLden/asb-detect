@@ -21,7 +21,7 @@
 <script src="scripts/asb-detect.js"></script>
 ```
 
-##### ES6 way
+###### ES6 way
 ```javascript
 import 'asb-detect';
 ```
