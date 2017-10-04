@@ -1,5 +1,5 @@
-import gulp from 'gulp';
-import sequence from 'run-sequence';
+import gulp from 'gulp'
+import sequence from 'run-sequence'
 
 export function defaultTask (cb) {
     sequence(

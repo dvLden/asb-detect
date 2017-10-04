@@ -1,15 +1,15 @@
-import config from '../config';
+import config from '../config'
 
-import gulp from 'gulp';
-import util from 'gulp-util';
-import path from 'path';
-import browserify from 'browserify';
-import babelify from 'babelify';
-import source from 'vinyl-source-stream';
-import buffer from 'vinyl-buffer';
-import stripDebug from 'gulp-strip-debug';
-import notify from 'gulp-notify';
-import uglify from 'gulp-uglify';
+import gulp from 'gulp'
+import util from 'gulp-util'
+import path from 'path'
+import browserify from 'browserify'
+import babelify from 'babelify'
+import source from 'vinyl-source-stream'
+import buffer from 'vinyl-buffer'
+import stripDebug from 'gulp-strip-debug'
+import notify from 'gulp-notify'
+import uglify from 'gulp-uglify'
 
 const PATH = {
     src: path.join(config.root.src, `/**/*.js`),
@@ -27,7 +27,7 @@ export function scriptsTask () {
         .on('error', e => util.log(e))
         .pipe(source('asb-detect.js'))
         .pipe(buffer())
-        // .pipe(stripDebug())
+        // .pipe(stripDebug()) // disabled because alert() is required in this snippet
         .pipe(uglify())
         .pipe(notify({
             onLast: true,

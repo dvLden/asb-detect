@@ -7,9 +7,6 @@
 ### Install
 ---
 
-#### Bower
-`bower install asb-detect --save`
-
 #### NPM
 `npm install asb-detect --save`
 
